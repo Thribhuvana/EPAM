@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Semester Course Registration</h1>
+    </header>
+    <main>
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required>
+
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" placeholder="Enter your ID" required>
+
+            <label for="semester">Select Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="">--Select--</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+                <option value="7">Semester 7</option>
+                <option value="8">Semester 8</option>
+            </select>
+
+            <label for="courses">Select Courses:</label>
+            <div id="courses">
+                <input type="checkbox" id="course1" name="courses" value="Deep Learning">
+                <label for="course1">Deep Learning</label><br>
+
+                <input type="checkbox" id="course2" name="courses" value="Machine Learning">
+                <label for="course2">Machine Learning</label><br>
+
+                <input type="checkbox" id="course3" name="courses" value="EPAM">
+                <label for="course3">EPAM</label><br>
+
+                <input type="checkbox" id="course4" name="courses" value="Distributed Parallel Computing">
+                <label for="course4">Distributed Parallel Computing</label><br>
+
+                <input type="checkbox" id="course5" name="courses" value="Compiler Design">
+                <label for="course5">Compiler Design</label><br>
+
+                <input type="checkbox" id="course6" name="courses" value="PS-2">
+                <label for="course6">PS-2</label><br>
+
+                <input type="checkbox" id="course7" name="courses" value="Term Paper">
+                <label for="course7">Term Paper</label><br>
+
+                <input type="checkbox" id="course8" name="courses" value="Cloud Based AI/ML Speciality">
+                <label for="course8">Cloud Based AI/ML Speciality</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div id="confirmation"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
